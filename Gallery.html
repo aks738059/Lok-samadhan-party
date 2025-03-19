@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery || Lok Samadhan Party</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #gallery-div1{
+                /* background-color: lightblue; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+        }
+
+        .gallery-div1{
+                width: 100%;
+                height: 400px;
+                /* border: 1px solid black; */
+                /* height: 200px; */
+        }
+
+        .gallery-div1 img{
+                height: 400px;
+                width: 100%;
+                opacity: 0.3;
+        }
+
+        .gallery-div1 h2{
+            color: black;
+            text-align: center;
+            font-size: 3.5em;
+            margin-top: -4em;
+        }
+
+        #image-div1, #image-div2, #image-div3{
+                /* border: 1px solid black; */
+                height: 300px;
+                min-height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                z-index: 0;
+        }
+
+        .img1{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/1.jpg);
+            border-radius: 10px;
+            filter: grayscale(1);
+            background-size: cover;
+            transition: all 2s ease;
+            cursor: pointer;  
+        }
+
+        .img1:hover{
+            transform: rotate(5deg);
+            filter: hue-rotate(20deg);  
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img2{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/2.jpg);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+        }
+
+        .img2:hover{
+            transform: rotate(-5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img3{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/3.jpg);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            /* background-position: 0px; */
+        }
+
+        .img3:hover{
+            transform: rotate(5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img4{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/4.png);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            
+        }
+
+        .img4:hover{
+            transform: rotate(-5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img5{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/5.png);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+        }
+
+        .img5:hover{
+            transform: rotate(5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img6{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/6.png);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            
+        }
+
+        .img6:hover{
+            transform: rotate(-5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img7{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/7.jpg);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            
+        }
+
+        .img7:hover{
+            transform: rotate(5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img8{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/8.png);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            
+        }
+
+        .img8:hover{
+            transform: rotate(-5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img9{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/3.jpg);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            
+        }
+
+        .img9:hover{
+            transform: rotate(5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img10{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/5.png);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            
+        }
+
+        .img10:hover{
+            transform: rotate(-5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+        .img11{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/2.jpg);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            
+        }
+
+        .img11:hover{
+            transform: rotate(5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        .img12{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            background-image: url(gallery/4.png);
+            border-radius: 10px;
+            filter: grayscale(1);
+            cursor: pointer;
+            background-size: cover;
+            transition: all 2s ease;
+            
+        }
+
+        .img12:hover{
+            transform: rotate(-5deg);
+            filter: hue-rotate(20deg);
+            box-shadow: 0px 0px 10px 0px; 
+        }
+
+        #map{
+            display: flex;
+            background-color: rgb(151, 188, 188);
+            background-image: url(img/country\ map.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            /* width: 80%; */
+            /* margin-left: 10em; */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+        }
+
+        .adress-div{
+                /* border: 1px solid black; */
+                height: 330px;
+                width: 400px;
+        }
+
+        .adress-div p{
+                font-size: 25px;
+                font-weight: bold;
+                padding: 1em;
+        }
+        .adress-div button{
+                background-color: aqua;
+                width: 40%;
+                margin-left: 1.5em;
+                border: none;
+                font-weight: bold;
+                border-radius: 10px;
+        }
+
+        .adress-div button:hover{
+                background-color: aquamarine;
+                box-shadow: 0px 0px 5px;
+        }
+        .map-div{
+            /* border: 1px solid black; */
+            width: 100%;
+        }
+
+        .map-div iframe{
+                border-radius: 10px;
+        }
+        
+
+
+         /* start responsive style of all device */
+
+
+           /* make responsive for large device */
+
+        @media screen and (min-width:900px){
+            .gallery-div1 h1{
+                    font-size: 60px;
+            }
+
+            #image-div1, #image-div2, #image-div3{
+                width: 100%;
+                height: auto;
+                
+            }
+
+            .img1, .img2, .img3, .img4{
+                    width: 20%;
+                           
+            }
+
+            .img5, .img6, .img7, .img8{
+                    width: 20%;
+            }
+
+            .img9, .img10, .img11, .img12{
+                    width: 20%;
+            }
+
+            #map{
+                height: auto;
+            }
+
+            .adress-div{
+                    width: 30%;
+            }
+
+            .map-div{
+                    width: 30%;
+            }
+            .map-div iframe{
+                    width: 160%;
+            }
+        }
+
+
+         /* make responsive for laptop */
+
+         @media screen and (max-width:900px){
+            #image-div1, #image-div2, #image-div3{
+                width: 100%;
+                height: auto;
+                
+            }
+
+            .img1, .img2, .img3, .img4{
+                    width: 40%;
+                    /* margin-top: 30px; */
+                    margin-bottom: 20px; 
+                        
+            }
+
+            .img5, .img6, .img7, .img8{
+                    width: 40%;
+                    margin-bottom: 20px; 
+            }
+
+            .img9, .img10, .img11, .img12{
+                    width: 40%;
+                    margin-bottom: 20px; 
+            }
+
+            #map{
+                height: auto;
+            }
+
+            .adress-div{
+                    width: 30%;
+            }
+
+            .map-div{
+                    width: 95%;
+            }
+            .map-div iframe{
+                    width: 100%;
+            }
+
+          
+        }
+
+      
+        /* make responsive for tablet */
+
+        @media screen and (max-width:768px){
+            .gallery-div1 img{
+                    width: 100%;
+                    /* height: 400px; */
+            }
+
+            #image-div1, #image-div2, #image-div3{
+                width: 100%;
+                height: auto;
+                
+            }
+
+            .img1, .img2, .img3, .img4{
+                    width: 35%;
+                    /* margin-top: 30px; */   
+                    margin-bottom: 20px;   
+            }
+
+            .img5, .img6, .img7, .img8{
+                    width: 35%;
+                    margin-bottom: 20px;  
+            }
+
+            .img9, .img10, .img11, .img12{
+                    width: 35%;
+                    margin-bottom: 20px;  
+            }
+
+            #map{
+                height: auto;
+            }
+
+            .adress-div{
+                    width: 80%;
+                    text-align: center;
+            }
+
+            .adress-div p{
+                line-height: 35px;
+            }
+
+            .map-div{
+                    width:90%;
+            }
+
+            .map-div iframe{
+                    width: 100%;
+            }
+        }
+
+        
+        /* make responsive for mobile phone */
+
+        @media screen and (max-width:480px){
+
+            .gallery-div1 img{
+                    width: 100%;
+                    /* height: auto; */
+            }
+
+            .gallery-div1 h2{
+                    font-size: 40px;
+                    margin-top: -55%;
+            }
+
+           
+
+            #image-div1, #image-div2, #image-div3{
+                width: 100%;
+                height: auto;
+                
+            }
+
+            .img1, .img2, .img3, .img4{
+                    width: 80%;
+                    /* margin-bottom: 80%; */
+            }
+
+            .img5, .img6, .img7, .img8{
+                    width: 80%;
+            }
+
+            .img9, .img10, .img11, .img12{
+                    width: 80%;
+            }
+
+            #map{
+                height: auto;
+            }
+
+
+            .adress-div{
+                    width: 100%;
+                    text-align: center;
+            }
+
+
+            .map-div{
+                    width: 90%;
+            }
+
+            .map-div iframe{
+                    width: 100%;
+            }
+        }
+       
+
+       
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-div">
+                <div class="logo">
+                    <a href="Home.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
+                </div>
+                    <h1>LOK <span>SAMADHAN</span> PARTY </h1>
+                    <input type="checkbox"  id="menu">
+                    <label for="menu" class="menu">&#9776;</label>
+                <ul class="navbar">
+                    <li>
+                        <a href="Home.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Service.html">Service</a>
+                        <a href="Event.html">Event</a>
+                        <a href="Blog.html">Blog</a>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="account" href="Account.html"> <img src="icon/account.png" alt="account icon" width="50px"></a>
+                <a class="donate" href="Donate.html"><button>Donate Now</button></a>
+            </div>
+        </nav>
+    </header><br>
+    
+    <main>
+        <div id="gallery-div1">
+            <div class="gallery-div1">
+                <img src="background/indian flag.jpg" alt="background">
+                <h2>Gallery: Lok <span class="span">Samadhan </span> Party</h2>
+            </div>
+        </div>
+
+        <div id="image-div1">
+            <div class="img1">
+                <p>img1</p>
+            </div>
+
+            <div class="img2">
+                <p>img2</p>
+            </div>
+
+            <div class="img3">
+                <p>img3</p>
+            </div>
+
+            <div class="img4">
+                <p>img4</p>
+            </div>
+        </div><br>
+
+        <div id="image-div2">
+            <div class="img5">
+                <p>img1</p>
+            </div>
+
+            <div class="img6">
+                <p>img2</p>
+            </div>
+
+            <div class="img7">
+                <p>img3</p>
+            </div>
+
+            <div class="img8">
+                <p>img4</p>
+            </div>
+        </div><br>
+
+        <div id="image-div3">
+            <div class="img9">
+                <p>img1</p>
+            </div>
+
+            <div class="img10">
+                <p>img2</p>
+            </div>
+
+            <div class="img11">
+                <p>img3</p>
+            </div>
+
+            <div class="img12">
+                <p>img4</p>
+            </div>
+        </div> <br>
+
+        <div id="map">
+            <div class="adress-div">
+                <p>
+                    केंद्रीय कार्यालय पता : <br>
+                    मकान नं - गांधीनगर कॉलोनी, <br>
+                    पोस्ट - सुन्दरपुर , <br>
+                    लखनऊ - 221005 </p>
+                    <a href="https://www.google.com/maps"><button>गूगल मैप पर देखे &rarr; </button></a>
+            </div>
+
+            <div class="map-div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799831448!2d82.90870709861062!3d25.32089491994236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742292313815!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       </div>
+    </main><br>
+    
+    <footer>
+        <div id="footer">
+            <div class="div-container1">
+                <h2>Candidate Info</h2>
+                <p>Lorem ipsum dolor sit amet, consect <br> sicing elit, sed do eiusmod tempor <br> is inci ut labore et dolore mag </p>
+                <a href="#">Road-7, House-62, Dhaka.</a> <br>
+                <a href="#">+770 698 784 235</a> <br>
+                <a href="#">exam@gmail.com</a>
+            </div>
+
+            <div class="div-container2">
+                <h2>Quick Link</h2>
+                <a href="#">Search Engine Optimizationa</a><br>
+                <a href="#">Pay Per Click Management</a> <br>
+                <a href="#">Real Time Analytics</a><br>
+                <a href="#">Search Engine Optimization</a><br>
+                <a href="#">Free SEO Analysis</a><br>
+                <a href="#">Company & Contact Info</a>
+            </div>
+
+            <div class="div-container3">
+                <h2>Media Resources</h2>
+                <a href="Press.html">Press Release</a><br>
+                <a href="Speech.html">Speeches</a> <br>
+                <a href="Gallery.html">Photo Gallery</a><br>
+                <a href="Video.html">Video Gallery</a><br>
+                <a href="Privacy.html">Privacy Policy </a><br>
+                <a href="Terms.html">Tearm & Condition</a>
+            </div>
+
+            <div class="div-container4">
+                <form action="php">
+                    <h2>Newsletter</h2>
+                    <input type="text" placeholder="Your Name*"  required><br></br>
+                    <input type="text" placeholder="Your Email*"  required><br></br>
+                    <textarea name="feedback" id="10" placeholder="Send Massage" rows="10"  required></textarea><br></br>
+                    <button>Send Massage</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="copyright-div">
+            <div class="box1">
+                <p>Design & Developed By: Hindsol Software Pvt. Ltd.</p>
+            </div>
+
+            <div class="box2">
+                <p>&copy;Copyright Lok Samadhan Party 2025. All Rights Reserved.</p>
+            </div>
+
+            <div class="box3">
+                <a href="Home.html">Home</a> ||
+                <a href="About.html">About</a> ||
+                <a href="Team.html">Team</a> ||
+                <a href="Register.html">Register Now</a>
+            </div>
+        </div>
+
+        <div id="icons">
+            <div class="icon">
+                <a href="https://www.facebook.com/"><img src="icon/facebook-removebg-preview.png" alt="facebook icon" width="30px"></a>
+                <a href="https://www.instagram.com/"><img src="icon/Instagram-removebg-preview.png" alt="instagram icon" width="30px"></a>
+                <a href="https://www.linkedin.com"><img src="icon/linkdin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
+                <a href="https://x.com/?lang=en"><img src="icon/twitter-removebg-preview.png" alt="twitter icon" width="30px"></a>
+                <a href="https://www.youtube.com/"><img src="icon/youtubr-removebg-preview.png" alt="youtube icon" width="30px"></a>
+                <a href="https://web.telegram.org/k/"><img src="icon/telegram-removebg-preview-removebg-preview.png" alt="telegram icon" width="30px"></a>
+                
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
